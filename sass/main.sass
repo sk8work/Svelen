@@ -1,0 +1,140 @@
+@import clear
+@import vars
+@import fonts
+@import extends
+@import headerstyles
+
+
+body
+  font-family: ManropeMedium
+  font-size: 10px
+  letter-spacing: 2px
+.header__search
+  background-color: transparent
+.ibg
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  img
+    display: none
+
+.wrapper
+  overflow: hidden
+  min-height: inherit
+
+
+  //==============================================header============================================================
+
+.page 
+  position: absolute
+  width: 100% 
+  height: 100%
+  top: 0
+  left: 0
+  @extend .flexbox 
+  flex-direction: column
+
+.main-screen 
+  flex: 1 0 100%
+  &__bg 
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 0px 0px 20px 20px
+.header-container
+  @extend .flexbox
+  flex: 1 1 100%
+  flex-direction: column
+  justify-content: space-between
+  align-items: space-between
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    position: relative
+    min-height: 100vh
+    overflow: hidden
+    .header-main
+      position: absolute
+      z-index: 10
+      bottom: 55%
+      right: 70px
+    .main-footer
+      position: absolute
+      z-index: 10
+      bottom: 0px
+      right: 70px
+
+.header-main
+  width: 100%
+  @extend .flexbox
+  justify-content: flex-end
+  align-self: flex-end
+  h1
+    width: 920px
+    margin-right: 94px
+
+.header-footer
+  width: 100%
+  @extend .flexbox
+  justify-content: flex-end
+  align-self: flex-end
+  align-content: flex-end
+
+.main-footer
+  color: white
+  width: 100%
+  max-height: inherit
+  @extend .flexbox
+  justify-content: flex-end
+  &__item
+    width: 367px
+    height: 400px
+    text-align: right
+    border-right: 1px solid white
+    padding-right: 33px
+    padding-top: 40px
+    position: relative
+    
+    &__title
+      position: relative
+      z-index: 40
+      font-family: OpenSansSemiBold
+      font-weight: bold
+      font-size: 24px
+      line-height: 28px
+    &__description
+      font-family: OpenSansRegular
+      margin-top: 12px
+      display: none
+    &__img
+      margin-top: 29px
+      text-align: right
+      display: none
+    &:hover
+      background: white
+      color: $dark-gray2
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      &:first-child
+        border-radius: 10px 0 0 10px
+      .main-footer__item__description
+        font-family: OpenSansRegular
+        font-size: 18px
+        line-height: 106%
+        display: block
+      .main-footer__item__img
+        display: block
+        float: right
+    
+
+/*================== Block #2 ======================*/
+
+.central-container
+  max-width: 1200px
+  padding: 128px 20px 187px
+  margin: 0 auto
+  color: black
+  
+.catalog
+
+

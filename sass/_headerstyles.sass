@@ -1,0 +1,110 @@
+@import extends
+
+.header
+  position: absolute
+  width: 100%
+  z-index: 20
+  color: white
+  &__row
+    height: 80px
+    padding-top: 47px
+    @extend .flexbox
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+  &__left
+    @extend .flexbox
+  &__menu
+  &__logo
+    margin-left: 45px
+    margin-right: 63px
+  &__right
+    @extend .flexbox
+    justify-items: center
+    .btn
+      &:hover
+        color: $green-color
+      &:active
+        background-color: $green-color
+        color: white
+.search
+  &__input
+    background-color: $dark-gray
+    border: none
+    border-color: $dark-gray
+    color: $green-color
+    font-size: 18px
+    line-height: 19px
+    padding-left: 25px
+    padding-top: 11px
+    padding-bottom: 5px
+    width: 380px
+    @extend .flexbox
+    align-content: center
+
+.header__lang
+  @extend .flexbox
+  align-items: center
+
+.header__lang-list
+  list-style-type: none
+  margin-left: 77px
+  @extend .flexbox
+  justify-items: center
+  //align-items: center
+
+.header__lang-list__item
+  font-family: OpenSansRegular
+  margin-left: 6px
+  font-size: 24px
+  line-height: 14px
+  color: white
+  .arrow
+    padding-bottom: 2px
+    cursor: pointer
+
+.container
+
+.menu
+  position: relative
+  font-family: OpenSansRegular
+  font-size: 24px
+  //display: none
+  &__body
+    position: absolute
+    top: 80px
+    left: -50px
+  .menu__list
+    border-left: 1px solid white
+    padding-left: 32px
+    padding-right: 32px
+    padding-bottom: 187px
+    padding-top: 28px
+    list-style-type: none
+    position: relative
+    z-index: 100
+    &__item
+      margin-bottom: 24px
+      &:hover
+        a
+          color: $green-color
+          font-family: OpenSansSemiBold
+  &__link 
+    color: white
+    &__social
+      margin-right: 15px
+  &__list-social
+    margin-top: 65px
+  &__icon
+    cursor: pointer
+    width: 45px
+    height: 35px
+    @extend .flexbox
+    flex-direction: column
+    justify-content: space-between
+    span
+      width: 45px
+      border-bottom: 3px solid white
+      border-radius: 3px
+  
+
